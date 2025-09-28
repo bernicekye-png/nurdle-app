@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "name": "Mississippi Spill",
+    "date": "2020-10-10",
+    "location": [29.95, -90.07],
+    "description": "Pellets spilled from a cargo ship and spread along the Mississippi River banks.",
+    "beforeImage": "/images/mississippi_before.jpg",
+    "afterImage": "/images/mississippi_after.jpg"
+  }
+]
