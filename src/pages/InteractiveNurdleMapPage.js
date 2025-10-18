@@ -33,6 +33,7 @@ export default function InteractiveNurdleMapPage() {
         >
           <option value="">-- Please choose an option --</option>
           <option value="mississippi">Mississippi River Spill</option>
+          <option value="newyork">New York Train Derailment Spill (07/02/2024)</option>
         </select>
 
         {/* Spill info and iframe */}
@@ -45,7 +46,7 @@ export default function InteractiveNurdleMapPage() {
                 width: "100%",
                 height: "500px",
                 border: "none",
-                borderRadius: "16px",
+                borderRadius: "8px",
                 marginTop: "20px",
               }}
             />
@@ -77,6 +78,59 @@ export default function InteractiveNurdleMapPage() {
               </p>
               <p>
                 <b>Address:</b> 50 Napoleon Ave, New Orleans, LA 70115
+              </p>
+            </div>
+          </>
+        )}
+
+        {/* 🟢 New York Train Derailment Spill */}
+        {selectedSpill === "newyork" && (
+          <>
+            <iframe
+              src="https://create-map-with-conf-njkl.bolt.host/"
+              title="New York Train Derailment Spill Map"
+              style={{
+                width: "100%",
+                height: "500px",
+                border: "none",
+                borderRadius: "8px",
+                marginTop: "20px",
+              }}
+            />
+            <div
+              style={{
+                marginTop: "20px",
+                padding: "15px",
+                backgroundColor: "#f0f0f0",
+                borderRadius: "8px",
+                boxShadow: "0 0 10px rgba(0,0,0,0.1)",
+              }}
+            >
+              <h2>New York Train Derailment Spill — July 2, 2024</h2>
+              <p>
+                Ten cars of a cargo train carrying plastic pellets and cooking oil derailed in upstate
+                New York, with two ending up in a river, authorities said. The cars, part of a 94-car
+                train operated by Berkshire & Eastern Railroad, derailed about 10:15 p.m. Wednesday in
+                Rensselaer County, in the village of Valley Falls.
+              </p>
+              <p>
+                This incident released large quantities of plastic pellets—similar to nurdles—into nearby
+                waterways, posing serious ecological threats to aquatic life and the surrounding
+                environment. Local responders contained part of the spill, but significant microplastic
+                pollution was reported downstream.
+              </p>
+              <p>
+                <b>Location:</b> Valley Falls, Rensselaer County, New York
+              </p>
+              <p>
+                <a
+                  href="https://apnews.com/article/cargo-train-derailment-new-york-river-48c889ecdbbcaa87096ae346206602ca"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#27476E", textDecoration: "underline" }}
+                >
+                  Learn more from the Associated Press
+                </a>
               </p>
             </div>
           </>

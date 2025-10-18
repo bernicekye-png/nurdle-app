@@ -12,29 +12,46 @@ export default function AdvocacyPage() {
           lineHeight: "1.6",
         }}
       >
-        <h1
+        {/* 🖼️ Add image here */}
+        <img
+          src="/advocacy_banner.png" // 
+          alt="Community Advocacy"
           style={{
-            fontFamily: "'Playfair Display', serif",
-            fontSize: "32px",
-            marginBottom: "20px",
+            width: "100%",
+            borderRadius: "10px",
+            marginBottom: "30px",
           }}
-        >
-          Advocacy & Solutions
-        </h1>
+        />
+
+        {/* 🧹 Removed “Advocacy & Solutions” header */}
         <p>
-          Plastic nurdles are a huge environmental threat, but there are practical solutions. Here are
-          resources and cleanup initiatives you can explore:
+          Plastic nurdles are a huge environmental threat, but there are practical
+          solutions. Here are resources and cleanup initiatives you can explore:
         </p>
 
         <h2>🛠️ Cleanup Initiatives</h2>
         <ul>
           <li>
-            <strong>Nurdle Patrol:</strong> Citizen-science effort for monitoring and collecting
-            nurdles. <a href="https://nurdlepatrol.org" target="_blank" rel="noreferrer">Visit here</a>
+            <strong>Nurdle Patrol:</strong> Citizen-science effort for monitoring
+            and collecting nurdles.{" "}
+            <a
+              href="https://nurdlepatrol.org"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Visit here
+            </a>
           </li>
           <li>
-            <strong>Break Free From Plastic:</strong> Global movement to reduce plastic waste.
-            <a href="https://www.breakfreefromplastic.org/" target="_blank" rel="noreferrer">Learn more</a>
+            <strong>Break Free From Plastic:</strong> Global movement to reduce
+            plastic waste.{" "}
+            <a
+              href="https://www.breakfreefromplastic.org/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Learn more
+            </a>
           </li>
         </ul>
 
