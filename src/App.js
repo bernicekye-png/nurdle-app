@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import InteractiveNurdleMapPage from "./pages/InteractiveNurdleMapPage";
 import NurdleMapPage from "./pages/NurdleMapPage";
 import HomePage from "./pages/HomePage";
-import AdvocacyPage from "./pages/AdvocacyPage"; // Make sure this exists
+import AdvocacyPage from "./pages/AdvocacyPage";
+import NurdleIdentifierPage from "./pages/NurdleIdentifierPage"; // ✅ NEW IMPORT
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Route path="/interactive-map" element={<InteractiveNurdleMapPage />} />
         <Route path="/confidence-map" element={<NurdleMapPage />} />
         <Route path="/advocacy" element={<AdvocacyPage />} />
-        {/* Removed GeospatialPage route */}
+        <Route path="/identifier" element={<NurdleIdentifierPage />} />
       </Routes>
     </Router>
   );

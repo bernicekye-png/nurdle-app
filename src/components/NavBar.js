@@ -21,6 +21,7 @@ export default function NavBar() {
         <Link to="/" style={linkStyle}>Home</Link>
         <Link to="/interactive-map" style={linkStyle}>Interactive Map</Link>
         <Link to="/confidence-map" style={linkStyle}>Confidence Scores</Link>
+        <Link to="/identifier" style={linkStyle}>Nurdle Identifier</Link> {/* ✅ New Link */}
         <Link to="/advocacy" style={linkStyle}>Advocacy</Link>
       </div>
     </nav>
